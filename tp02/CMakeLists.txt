@@ -4,6 +4,8 @@ project(tp02)
 add_executable(exo
     Card.cpp
     Card.hpp
+    Player.cpp
+    Player.hpp
     main.cpp
 )
 
