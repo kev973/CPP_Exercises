@@ -1,4 +1,4 @@
-#include "Card.hpp"
+#include "Player.hpp"
 #include <iostream>
 
 int main(){
@@ -21,6 +21,22 @@ int main(){
 
     const Card bonus { 14, "Carreau" };
     bonus.print();
+    std::cout << std::endl;
+    std::cout << std::endl;
+
+    Player p1 { "Gerald" };
+    Player p2 { "Julien" };
+    Player::deal_all_cards(p1, p2);
+
+    for (auto i = 0; i < 16; ++i)
+    {
+        p1[i].print();
+        std::cout << std::endl;
+        p2[i].print();
+        std::cout << std::endl;
+    }
+
+    
 
     return 0;
 }
