@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.1)
-project(tp2)
+project(tp02)
 
 add_executable(exo
+    Card.cpp
+    Card.hpp
     main.cpp
 )
 
